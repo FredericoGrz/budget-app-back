@@ -9,7 +9,6 @@ const routes = require("./routes");
 const AppError = require("./utils/AppError");
 
 const allowedOrigins = [process.env.FRONT_URL];
-console.log(allowedOrigins);
 
 const corsOptions = {
   origin: function (origin, callback) {
