@@ -51,8 +51,7 @@ class ExpenseController {
         value,
         description,
       });
-      console.log(res);
-      res.status(201).json({ teste: "AAA" });
+      res.status(201).json({ message: "Created" });
     } catch (error) {
       throw new AppError(error.message);
     }

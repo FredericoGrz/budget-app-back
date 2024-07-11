@@ -52,7 +52,7 @@ class IncomeController {
         description,
       });
 
-      res.status(201).json();
+      res.status(201).json({ message: "Created" });
     } catch (error) {
       throw new AppError(error.message);
     }
