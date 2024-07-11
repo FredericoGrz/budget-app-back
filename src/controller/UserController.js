@@ -25,7 +25,7 @@ class UserController {
         //Insere um novo usuário
         await knex("users").insert({ name, email, password: hashedPassword });
 
-        res.status(201).json();
+        res.status(201).json({ message: "Created" });
       }
     } catch (error) {
       throw new AppError(error.message);
